@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AlyaScript — помощник</title>
+  <meta name="description" content="Информационный сайт о боте: команды, правила использования, политика конфиденциальности.">
+  <meta name="theme-color" content="#7c5cff">
+  <link rel="preload" as="video" href="assets/alya.mp4">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="video-bg" aria-hidden="true">
+    <video id="bgVideo" class="video" playsinline muted loop preload="auto" poster="" src="assets/alya.mp4"></video>
+    <div class="video-overlay"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand gradient">AlyaScript</div>
+      <nav class="nav">
+        <a class="btn small ghost" href="#about">О боте</a>
+        <a class="btn small ghost" href="#commands">Команды</a>
+        <a class="btn small ghost" href="pages/rules.html">Правила</a>
+        <a class="btn small ghost" href="pages/privacy.html">Конфиденциальность</a>
+      </nav>
+      <button id="soundToggle" class="sound-btn danger pulse" aria-pressed="false" aria-label="Переключить звук">🔊 Звук: Включить</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="mascot" aria-hidden="true">
+      <img src="assets/chibi.png" alt="" />
+    </div>
+    <section id="hero" class="hero section">
+      <div class="container">
+        <h1 class="reveal-up">Ваш помощник — умный бот</h1>
+        <p class="lede reveal-up delay-1">Узнайте основные команды, правила использования и нашу политику. Фон — ваше видео, звук включается по клику.</p>
+        <div class="cta-group reveal-up delay-2">
+          <a class="btn primary" href="#commands">Смотреть команды</a>
+          <a class="btn" href="pages/rules.html">Правила</a>
+          <a class="btn" href="pages/privacy.html">Политика конфиденциальности</a>
+        </div>
+        <p class="note reveal-up delay-3">Мы используем и адаптируем открытые скрипты из других источников и каналов. Обязательную атрибуцию указываем на странице и в коде.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2 class="reveal-up">О боте</h2>
+        <p class="reveal-up delay-1">Бот помогает автоматизировать рутинные задачи, предоставляет быстрые ответы и интеграции. Доступен 24/7 и легко настраивается под ваши сценарии.</p>
+        <ul class="features">
+          <li class="card reveal-fade"><span>⚡</span><b>Быстро</b> — мгновенные ответы</li>
+          <li class="card reveal-fade delay-1"><span>🔒</span><b>Безопасно</b> — защита данных</li>
+          <li class="card reveal-fade delay-2"><span>🧩</span><b>Гибко</b> — расширяемые команды</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="commands" class="section">
+      <div class="container">
+        <h2 class="reveal-up">Команды (без команд владельца)</h2>
+        <div class="commands-grid">
+          <div class="cmd reveal-fade">
+            <code>/help</code>
+            <p>Список доступных команд и подсказок.</p>
+          </div>
+          <div class="cmd reveal-fade delay-1">
+            <code>/start</code>
+            <p>Приветствие и первичная настройка.</p>
+          </div>
+          <div class="cmd reveal-fade delay-2">
+            <code>/info</code>
+            <p>Информация о текущей версии и статусе.</p>
+          </div>
+          <div class="cmd reveal-fade delay-3">
+            <code>/report</code>
+            <p>Отправка отчёта/обратной связи разработчикам.</p>
+          </div>
+          <div class="cmd reveal-fade delay-4">
+            <code>/support</code>
+            <p>Контакты поддержки и FAQ.</p>
+          </div>
+        </div>
+        <div class="footnote reveal-up delay-3">Команды владельца намеренно не перечислены.</div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2 class="reveal-up">Атрибуция и источники</h2>
+        <p class="reveal-up delay-1">Мы заимствуем и адаптируем открытые скрипты из других каналов и репозиториев. При использовании обязательно отмечаем авторов и источники в коде и на страницах сайта.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> AlyaScript</span>
+      <nav>
+        <a href="pages/privacy.html">Политика конфиденциальности</a>
+        <a href="pages/rules.html">Правила использования</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
+
